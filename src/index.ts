@@ -21,8 +21,8 @@ app.get('/', (req: Request, res: Response) => {
 // Rute-Rute
 app.use('/transactions', transactionRoutes);
 app.use('/books', bookRoutes);
-// app.use('/auth', authRoutes);     // (Ini nanti ditambahkan teman Anda)
-// app.use('/genre', genreRoutes);   // (Ini nanti ditambahkan teman Anda)
+// app.use('/auth', authRoutes);     // ini nanti ditambahin....
+// app.use('/genre', genreRoutes);   // ini nanti ditambahin....
 
 
 // Mulai server

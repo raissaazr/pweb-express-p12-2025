@@ -4,10 +4,6 @@ import { prisma } from '../prisma'; // Import Prisma Client
 
 const router = Router();
 
-// ==========================================================
-// TUGAS ANDA DIMULAI DI SINI
-// ==========================================================
-
 /*
  * @route   GET /books/genre/:genre_id
  * @desc    Melihat daftar buku dalam sebuah genre dengan filter dan pagination
@@ -19,9 +15,6 @@ router.get('/genre/:genre_id', async (req: Request, res: Response) => {
     // 1. Ambil genre_id dari params
     const { genre_id } = req.params;
 
-    // ==========================================================
-    // TAMBAHAN KODE BARU DI SINI (SOLUSI)
-    // ==========================================================
     // 2. Validasi ID dari params (meyakinkan TypeScript)
     if (!genre_id) {
         return res.status(400).json({ message: 'Genre ID is required' });
@@ -101,7 +94,7 @@ router.get('/genre/:genre_id', async (req: Request, res: Response) => {
 });
 
 // ==========================================================
-// (Endpoint teman Anda nanti juga di sini)
+// Endpoint lainnya...
 // ==========================================================
 
 export default router;

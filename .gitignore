@@ -1,0 +1,12 @@
+# Berkas Rahasia
+.env
+
+# Folder dependensi
+node_modules/
+
+# Folder hasil build TypeScript
+dist/
+
+# Log dan file sistem operasi
+npm-debug.log*
+.DS_Store

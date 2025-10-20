@@ -1,0 +1,31 @@
+// src/index.ts
+
+import express, { Express, Request, Response } from 'express';
+import transactionRoutes from './routes/transaction.routes';
+import bookRoutes from './routes/book.routes';
+
+// Inisialisasi Express app
+const app: Express = express();
+const port = process.env.PORT || 3000;
+
+// Inisialisasi Prisma Client
+
+// Middleware untuk membaca JSON dari request body
+app.use(express.json());
+
+// Rute tes sederhana
+app.get('/', (req: Request, res: Response) => {
+  res.send('Selamat Datang di API IT Literature Shop!');
+});
+
+// Rute-Rute
+app.use('/transactions', transactionRoutes);
+app.use('/books', bookRoutes);
+// app.use('/auth', authRoutes);     // (Ini nanti ditambahkan teman Anda)
+// app.use('/genre', genreRoutes);   // (Ini nanti ditambahkan teman Anda)
+
+
+// Mulai server
+app.listen(port, () => {
+  console.log(`[server]: Server berjalan di http://localhost:${port} 🚀`);
+});

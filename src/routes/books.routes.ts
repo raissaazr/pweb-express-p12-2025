@@ -6,7 +6,7 @@ import {
     getBooksByGenre, 
     updateBook, 
     deleteBook 
-} from '../controllers/bookController';
+} from '../controllers/bookController.ts';
 
 const router = Router();
 

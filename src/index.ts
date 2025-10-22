@@ -2,7 +2,8 @@
 
 import express, { Express, Request, Response } from 'express';
 import transactionRoutes from './routes/transaction.routes';
-import bookRoutes from './routes/book.routes';
+import authRoutes from './routes/auth.routes';
+import genreRoutes from './routes/genre.routes';
 
 // Inisialisasi Express app
 const app: Express = express();
@@ -20,7 +21,8 @@ app.get('/', (req: Request, res: Response) => {
 
 // Rute-Rute
 app.use('/transactions', transactionRoutes);
-app.use('/books', bookRoutes);
+app.use('/auth', authRoutes);
+app.use('/genre', genreRoutes);
 // app.use('/auth', authRoutes);     // ini nanti ditambahin....
 // app.use('/genre', genreRoutes);   // ini nanti ditambahin....
 

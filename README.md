@@ -321,3 +321,28 @@ Body: (contoh format yang disesuaikan)
 - **Status:** Implementasi Logika Selesai.  Perlu: Penyesuaian format respons, penambahan middleware autentikasi.
 
 Dokumentasi ini merangkum endpoint yang ada, status pengerjaannya, dan penyesuaian yang diperlukan agar sesuai dengan Postman Collection. Fokus utama selanjutnya adalah menyesuaikan format respons dan menambahkan autentikasi.
+
+## Dokumentasi Endpoint Transactions
+
+![image alt](https://github.com/raissaazr/pweb-express-p12-2025/blob/1bfc9f35dd66844864d9987c2558e3de9347d0b9/assets/Screenshot%20(1484).png)
+
+ini hasil untuk struktur data transaction
+
+![image alt](https://github.com/raissaazr/pweb-express-p12-2025/blob/1bfc9f35dd66844864d9987c2558e3de9347d0b9/assets/Screenshot%20(1490).png)
+
+ini hasil untuk statistik transaksi 
+
+![image alt](https://github.com/raissaazr/pweb-express-p12-2025/blob/1bfc9f35dd66844864d9987c2558e3de9347d0b9/assets/Screenshot%20(1497).png)
+
+ini untuk mendapatkan detail terkait transaksi tertentu dari userID dan bookID
+
+![image alt](https://github.com/raissaazr/pweb-express-p12-2025/blob/1bfc9f35dd66844864d9987c2558e3de9347d0b9/assets/Screenshot%20(1500).png)
+
+ini untuk mendapatkan detail keseluruhan transaksi menggunakan transaction(id)
+
+![image alt](https://github.com/raissaazr/pweb-express-p12-2025/blob/1e20f7f8d3fe62d1abfaa5b26fbdd96613cfb046/assets/Screenshot%20(1484).png)
+
+ini untuk membuat transaksi dari userId `yang beli siapa` dan bookId `beli buku apa` dengan quantity `jumlah buku nya berapa`.
+
+
+
